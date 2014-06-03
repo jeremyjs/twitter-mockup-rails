@@ -1,7 +1,7 @@
 .navbar
   .container
     .pull-left
-      %ul.nav
+      %ul.nav.nav-primary
         %li 
           %a{href: '#'} 
             %span.icon= fa_icon 'home'
@@ -24,12 +24,13 @@
     .pull-right
       .search
         %input.search-input{type: 'text', placeholder: 'Search'}
+        %span.search-icon= fa_icon 'search'
 
-      %ul.nav
+      %ul.nav.nav-secondary
         %li 
-          %a{href: '#'} icon
+          %a{href: '#'}= fa_icon 'envelope'
         %li 
-          %a{href: '#'} icon
+          %a{href: '#'}= fa_icon 'cog'
         %li 
-          %a{href: '#'} icon
+          %a.btn{href: '#'}= fa_icon 'pencil-square-o'
       
