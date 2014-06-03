@@ -3,6 +3,7 @@
   width: 100%;
   border-bottom: 1px solid rgba(0,0,0,0.5);
   position: relative;
+  height: $navbar-height;
 
   .logo {
     width: $navbar-logo-size;
@@ -11,12 +12,49 @@
     background-size: 100%;
     text-indent: -9999px;
     position: absolute;
-    top: 5px;
+    top: 9px;
     left: 50%;
     margin-left: -$navbar-logo-size/2;
   }
 
-  .nav { }
+  .nav {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-  .search { }
+    li {
+      float: left;
+      height: $navbar-height;
+
+      a {
+        height: $navbar-height;
+        display: block;
+        font-size: 14px;
+        padding: 0px 20px 0 10px;
+        line-height: 1;
+        @include clearfix;
+        color: #666;
+
+        &:hover {
+          border-bottom: 5px solid $brand-primary;
+          color: $brand-primary;
+        }
+      }
+
+      .link-text {
+        float: left;
+        margin-left: 5px;
+        margin-top: 18px;
+      }
+      
+      .icon {
+        float: left;
+        font-size: 18px;
+        margin-top: 16px;
+      }
+    }
+  }
 }
+
+.search { }
