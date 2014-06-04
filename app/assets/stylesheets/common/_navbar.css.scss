@@ -67,16 +67,12 @@
     margin-left: 10px;
 
     li {
-      a {
-        padding: 0 15px;
-        color: $search-bg;
+      a { height: auto; }
 
-        i {
-          font-size: 24px;
-          margin-top: 12px;
-        }
-
-        &:hover { color: $brand-primary; }
+      #compose {
+        margin: 7px 10px;
+        font-size: 20px;
+        padding: 7px 8px 7px 11px;
       }
     }
   }

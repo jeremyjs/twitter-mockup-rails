@@ -9,4 +9,6 @@
   %body
     #page{class: "c-#{controller_name}"}
       = render 'layouts/navbar'
-      = yield
+
+      .container
+        = yield
