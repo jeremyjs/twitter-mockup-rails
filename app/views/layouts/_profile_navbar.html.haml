@@ -2,15 +2,16 @@
   .container
     .row
       .col-xs-3
-        .profile-avatar-small
-          %a.avatar{href: '#'}
-            = image_tag 'enova.png'
-          .details
-            %a.name{href: '#'} Enova
-            %a.handle{href: '#'} 
-              @
-              %span enova
-              %small follows you
+        .profile-card
+          .profile-avatar-small
+            %a.avatar{href: '#'}
+              = image_tag 'enova.png'
+            .details
+              %a.name{href: '#'} Enova
+              %a.handle{href: '#'} 
+                @
+                %span enova
+                %small follows you
 
       .col-xs-9
         %ul.nav
