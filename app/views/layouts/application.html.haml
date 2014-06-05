@@ -10,5 +10,8 @@
     #page{class: "c-#{controller_name}"}
       = render 'layouts/navbar'
 
+      .profile-header
+        = render 'layouts/profile_navbar'
+
       .container
         = yield
