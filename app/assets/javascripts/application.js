@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(window).scroll(function() {
+  $('.profile-header').toggleClass('locked', ($(this).scrollTop() > 430))
+});

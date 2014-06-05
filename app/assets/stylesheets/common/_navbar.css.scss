@@ -2,8 +2,12 @@
   background: #fff;
   width: 100%;
   border-bottom: 1px solid rgba(0,0,0,0.5);
-  position: relative;
   height: $navbar-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 
   .logo {
     width: $navbar-logo-size;

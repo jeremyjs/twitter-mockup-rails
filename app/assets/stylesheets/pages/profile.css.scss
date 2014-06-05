@@ -80,7 +80,10 @@
       font-weight: bold;
       color: #000;
       font-size: 18px;
+
+      &:hover { text-decoration: underline }
     }
+
     .handle {
       font-size: 14px;
       color: #666;
@@ -98,17 +101,19 @@
       }
 
       &:hover {
-        span { text-decoration: underline }
+        span {
+          text-decoration: underline;
+          text-decoration-color: red;
+        }
       }
     }
   }
 }
 
-.profile-avatar {
+.profile-avatar-large {
   position: absolute;
   bottom: -80px;
   z-index: 200;
-  display: none;
 
   .avatar {
     @include box-shadow(0 1px 1px rgba(0,0,0,0.2));
@@ -124,3 +129,12 @@
   }
 }
 
+.profile-header.locked {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -430px;
+
+  .profile-avatar-large { }
+  .profile-avatar-small { } 
+}
