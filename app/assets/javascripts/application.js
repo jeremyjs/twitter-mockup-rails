@@ -15,6 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-$(window).scroll(function() {
-  $('.profile-header').toggleClass('locked', ($(this).scrollTop() > 430))
-});
+// $(window).scroll(function() {
+//   $('.profile-header').toggleClass('locked', ($(this).scrollTop() > 430))
+// });

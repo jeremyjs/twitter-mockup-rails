@@ -1,0 +1,15 @@
+.recommendation
+  .avatar
+    = image_tag "", :height => 48, :width => 48
+  .info
+    .title
+      %span.name ChicagoRuby
+      %span.at-sign @
+      %a.handle{href: '#'} Chicag...
+    %span.followed-by
+      Followed by
+      %a{href: '#'} Enova
+      \...
+    %a.btn.btn-default{href: '#'}
+      = fa_icon 'user'
+      %span.follow Follow

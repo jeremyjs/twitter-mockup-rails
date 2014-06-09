@@ -1,0 +1,80 @@
+.tweet {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+
+  .title {
+    .name-details {
+
+      .name {
+        display: block;
+        float: left;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .handle {
+        display: block;
+        float: left;
+        margin-top: 4px;
+        color: #666;
+
+        .at-sign {
+          display: block;
+          float: left;
+          margin-left: 10px;
+        }
+
+        .handle-name {
+          display: block;
+          float: left;
+          margin-left: 2px;
+          margin-top: -1px;
+
+          &:hover { text-decoration: underline; }
+        }
+      }
+    }
+
+    .dot {
+      display: block;
+      float: left;
+      font-size: 12px;
+      margin-top: 6px;
+      margin-left: 6px;
+      padding: 0;
+    }
+
+    .date {
+      display: block;
+      float: left;
+      margin-top: 3px;
+      margin-left: 6px;
+    }
+  }
+
+  .content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .tweet-menu {
+    display: block;
+
+    ul {
+      display: block;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: block;
+        float: left;
+        padding: 10px 0;
+        margin-right: 30px;
+      }
+    }
+  }
+}

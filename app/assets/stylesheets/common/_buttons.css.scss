@@ -13,10 +13,26 @@
 .btn-primary {
   background: $brand-primary;
   color: #fff;
+  @include transition(1s all linear);
+  @include background-image(linear-gradient($brand-primary, darken($brand-primary, 10%)));
 
   &:hover {
     color: #fff;
-    background: darken($brand-primary, 10%);
+    background: lighten($brand-primary, 10%);
+    @include background-image(linear-gradient(lighten($brand-primary, 10%), $brand-primary ));
+  }
+}
+
+.btn-default {
+  background: $brand-primary;
+  color: #fff;
+  @include transition(1s all linear);
+  @include background-image(linear-gradient($brand-primary, darken($brand-primary, 10%)));
+
+  &:hover {
+    color: #fff;
+    background: lighten($brand-primary, 10%);
+    @include background-image(linear-gradient(lighten($brand-primary, 10%), $brand-primary ));
   }
 }
 

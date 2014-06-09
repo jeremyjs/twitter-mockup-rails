@@ -1,3 +1,4 @@
+@import 'compass';
 @import 'variables';
 @import 'mixins';
 @import 'bootstrap-custom';
@@ -6,6 +7,7 @@
 @import 'common/navbar';
 @import 'common/utility';
 @import 'common/buttons';
+@import 'common/tweet';
 
 @import 'pages/profile';
 
@@ -15,7 +17,7 @@
 }
 
 body {
-  background: #ddd;
+  background: #f5f8fa;
   height: 2000px;
 }
 

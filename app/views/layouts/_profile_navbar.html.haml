@@ -8,36 +8,45 @@
               = image_tag 'enova.png'
             .details
               %a.name{href: '#'} Enova
-              %a.handle{href: '#'} 
+              %a.handle{href: '#'}
                 @
                 %span enova
                 %small follows you
 
-      .col-xs-9
-        %ul.nav
+      .col-xs-7
+        %ul.nav.profile-nav
           %li.active
-            %a{href: '#'} 
+            %a{href: '#'}
               %span.text Tweets
               %span.value 369
           %li
-            %a{href: '#'} 
+            %a{href: '#'}
               %span.text Photos/videos
-              %span.value 13 
+              %span.value 13
           %li
-            %a{href: '#'} 
-              %span.text Following 
+            %a{href: '#'}
+              %span.text Following
               %span.value 154
           %li
-            %a{href: '#'} 
+            %a{href: '#'}
               %span.text Followers
-              %span.value 410 
+              %span.value 410
           %li
-            %a{href: '#'} 
-              %span.text Favorites 
-              %span.value 14 
+            %a{href: '#'}
+              %span.text Favorites
+              %span.value 14
           %li.more
-            %a{href: '#'} 
+            %a{href: '#'}
               %span.text &nbsp;
               %span.value
                 More
                 = fa_icon 'chevron-down'
+      .col-xs-2
+        .pull-right
+          %ul.nav-secondary.user-actions-nav
+            %li
+              %span.user-settings
+                %a{href: '#'}= fa_icon 'gear'
+            %li
+              .follow-btn
+                %a#follow-btn.btn.btn-primary.following{href: '#'} Following

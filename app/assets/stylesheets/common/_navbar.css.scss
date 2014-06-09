@@ -9,6 +9,8 @@
   right: 0;
   z-index: 1000;
 
+  .halo { background: none; }
+
   .logo {
     width: $navbar-logo-size;
     height: $navbar-logo-size;
@@ -19,6 +21,7 @@
     top: 9px;
     left: 50%;
     margin-left: -$navbar-logo-size/2;
+
   }
 
   .nav {
@@ -28,11 +31,11 @@
     padding: 0;
 
     li {
+      box-sizing: border-box;
       float: left;
-      height: $navbar-height;
 
       a {
-        height: $navbar-height;
+        height: $navbar-height - 1;
         display: block;
         line-height: 1;
         @include clearfix;
@@ -43,7 +46,7 @@
         margin-left: 5px;
         margin-top: 18px;
       }
-      
+
       .icon {
         float: left;
         font-size: 18px;
@@ -58,6 +61,7 @@
         font-size: 14px;
         padding: 0px 20px 0 10px;
         color: #666;
+        @include transition(0.1s all linear);
 
         &:hover {
           border-bottom: 5px solid $brand-primary;
@@ -71,7 +75,10 @@
     margin-left: 10px;
 
     li {
-      a { height: auto; }
+      a {
+        @include transition(0.1s all linear);
+        height: auto;
+      }
 
       #compose {
         margin: 7px 10px;
@@ -86,7 +93,6 @@
     position: relative;
 
     .search-input {
-      background: $search-bg;
       color: #fff;
       border: none;
       border-radius: 20px;
@@ -94,9 +100,12 @@
       padding-right: 28px;
       width: 250px;
       margin-top: 7px;
-      @include transition(0.1s all linear);
+      background: $search-bg;
+      @include transition(0.3s all linear);
 
-      &:focus { background: darken($search-bg, 25%) }
+      &:hover { background: darken($search-bg, 10%); }
+
+      &:focus { background: darken($search-bg, 25%); }
     }
 
     .search-icon {
@@ -107,3 +116,8 @@
     }
   }
 }
+
+.profile-nav:first-child {
+  margin-left: 10px;
+}
+

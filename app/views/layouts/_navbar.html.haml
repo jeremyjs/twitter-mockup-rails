@@ -1,36 +1,41 @@
 .navbar
   .container
-    .pull-left
-      %ul.nav.nav-primary
-        %li 
-          %a{href: '#'} 
-            %span.icon= fa_icon 'home'
-            %span.link-text Home
-        %li 
-          %a{href: '#'} 
-            %span.icon= fa_icon 'bell'
-            %span.link-text Notifications
-        %li 
-          %a{href: '#'} 
-            %span.icon= fa_icon 'rocket'
-            %span.link-text Discover
-        %li 
-          %a{href: '#'} 
-            %span.icon= fa_icon 'user'
-            %span.link-text Me 
+    .navbar-header
+      %button.navbar-toggle{ :type => "button", :data => { :toggle => "collapse", :target => "#navbar-collapse-1" } }
+        %span.sr-only Toggle navigation
+        %span.icon= fa_icon 'navicion'
+      .halo
+        %a.logo{href: '#'} Enova
+    .collapse.navbar-collapse#navbar-collapse-1
+      .pull-left
+        %ul.nav.nav-primary
+          %li
+            %a{href: '#'}
+              %span.icon= fa_icon 'home'
+              %span.link-text Home
+          %li
+            %a{href: '#'}
+              %span.icon= fa_icon 'bell'
+              %span.link-text Notifications
+          %li
+            %a{href: '#'}
+              %span.icon= fa_icon 'rocket'
+              %span.link-text Discover
+          %li
+            %a{href: '#'}
+              %span.icon= fa_icon 'user'
+              %span.link-text Me
 
-    .logo Enova
+      .pull-right
+        .search
+          %input.search-input{type: 'text', placeholder: 'Search'}
+          %span.search-icon= fa_icon 'search'
 
-    .pull-right
-      .search
-        %input.search-input{type: 'text', placeholder: 'Search'}
-        %span.search-icon= fa_icon 'search'
+        %ul.nav.nav-secondary
+          %li
+            %a.btn.btn-icon{href: '#'}= fa_icon 'envelope'
+          %li
+            %a.btn.btn-icon{href: '#'}= fa_icon 'cog'
+          %li
+            %a#compose.btn.btn-primary{href: '#'}= fa_icon 'pencil-square-o'
 
-      %ul.nav.nav-secondary
-        %li 
-          %a.btn.btn-icon{href: '#'}= fa_icon 'envelope'
-        %li 
-          %a.btn.btn-icon{href: '#'}= fa_icon 'cog'
-        %li 
-          %a#compose.btn.btn-primary{href: '#'}= fa_icon 'pencil-square-o'
-      

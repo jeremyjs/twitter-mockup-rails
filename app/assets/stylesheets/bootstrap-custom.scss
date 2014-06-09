@@ -22,7 +22,7 @@
 //@import "bootstrap/button-groups";
 //@import "bootstrap/input-groups";
 //@import "bootstrap/navs";
-//@import "bootstrap/navbar";
+@import "bootstrap/navbar";
 //@import "bootstrap/breadcrumbs";
 //@import "bootstrap/pagination";
 //@import "bootstrap/pager";
@@ -38,13 +38,13 @@
 //@import "bootstrap/responsive-embed";
 //@import "bootstrap/wells";
 //@import "bootstrap/close";
-//
-//// Components w/ JavaScript
+
+// Components w/ JavaScript
 //@import "bootstrap/modals";
 //@import "bootstrap/tooltip";
 //@import "bootstrap/popovers";
 //@import "bootstrap/carousel";
-//
-//// Utility classes
-//@import "bootstrap/utilities";
+
+// Utility classes
+@import "bootstrap/utilities";
 //@import "bootstrap/responsive-utilities";

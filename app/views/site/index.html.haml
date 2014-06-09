@@ -1,0 +1,94 @@
+.row
+  .col-sm-3
+    .profile-details
+      .name-details
+        %a.name{href: '#'} Enova
+        %a.handle{href: '#'}
+          %span.at-sign @
+          %span.handle-name enova
+      %p.bio
+        Helping hardworking people fulfill their financial
+        responsibilities with fast, trustworthy credit.
+      %ul.extra-details
+        %li.location
+          %span.icon= fa_icon 'map-marker'
+          %span.location Chicago
+        %li.website
+          %span.icon= fa_icon 'link'
+          %a.website{href: 'a'} enova.com
+        %li.joined
+          %span.icon= fa_icon 'clock-o'
+          %span.joined Joined January 2011
+
+    .tweet-box
+      .outer
+        .inner
+          %input.tweet-input{type: 'text', placeholder: 'Tweet to Enova'}
+
+    .extra-content
+      .title
+        %span.icon= fa_icon 'camera'
+        %a.description{href: '#'} 14 Photos and Videos
+      .content
+        .row
+          %img.photo{href: 'https://pbs.twimg.com/media/BpOxgWuIgAAUO5U.jpg:thumb'}
+          %img.photo{href: 'https://pbs.twimg.com/media/BpOxgWuIgAAUO5U.jpg:thumb'}
+          %img.photo{href: 'https://pbs.twimg.com/media/BpOxgWuIgAAUO5U.jpg:thumb'}
+        .row
+          %img.photo{href: 'https://pbs.twimg.com/media/BpOxgWuIgAAUO5U.jpg:thumb'}
+          %img.photo{href: 'https://pbs.twimg.com/media/BpOxgWuIgAAUO5U.jpg:thumb'}
+          %img.photo{href: 'https://pbs.twimg.com/media/BpOxgWuIgAAUO5U.jpg:thumb'}
+  .col-sm-6
+    .profile-feed-container
+      .header
+        %ul
+          %li
+            %a.active{href: '#'} Tweets
+          %li
+            %a{href: '#'} Tweets &amp; Replies
+      %span.clearfix
+      .tweets
+        = render 'site/tweet'
+        = render 'site/tweet'
+        = render 'site/tweet'
+        = render 'site/tweet'
+        = render 'site/tweet'
+        = render 'site/tweet'
+        = render 'site/tweet'
+        = render 'site/tweet'
+  .col-sm-3
+    .content-box.follow-recommendations
+      .header
+        %span.title Who to follow
+        %span.dot &#149;
+        %a.secondary{href: '#'} Refresh
+        %span.dot &#149;
+        %a.secondary{href: '#'} View all
+      .content.recommendation-container
+        = render 'site/recommendation'
+        = render 'site/recommendation'
+        = render 'site/recommendation'
+      .footer
+        %a{href: '#'} Popular accounts
+        %span.dot &#149;
+        %a{href: '#'} Find friends
+    .content-box.trends
+      .header
+        %span.title Trends
+        %span.dot &#149;
+        %a.secondary{href: '#'} Change
+      .content
+        %a.link{href: '#'} Uber
+        %a.link{href: '#'} The Fault in Our Stars
+        %a.link{href: '#'} #HiCam
+        %a.link{href: '#'} #weloveyoucam
+        %a.link{href: '#'} #camcares
+        %a.link{href: '#'} #startup
+        %a.link{href: '#'} #Lebroning
+        %a.link{href: '#'} Orange is the New Black
+        %a.link{href: '#'} Augustus Waters
+    .page-footer
+      %span.copywrite &copy;2014 Jeremy Meyer
+      %a.secondary{href: '#'} About
+      %a.secondary{href: '#'} Help
+      %a.secondary{href: '#'} Ads info
