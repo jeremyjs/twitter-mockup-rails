@@ -1,12 +1,12 @@
 .navbar
   .container
     .navbar-header
-      %button.navbar-toggle{ :type => "button", :data => { :toggle => "collapse", :target => "#navbar-collapse-1" } }
+      %button.navbar-toggle{ :type => "button", :data => { :toggle => "collapse", :target => "#nav-collapse" } }
         %span.sr-only Toggle navigation
-        %span.icon= fa_icon 'navicion'
-      .halo
-        %a.logo{href: '#'} Enova
-    .collapse.navbar-collapse#navbar-collapse-1
+        %span.icon= fa_icon 'navicon'
+      %span.logo Enova
+    =# TODO: fix navbar collapse
+    .collapse.navbar-collapse#nav-collapse
       .pull-left
         %ul.nav.nav-primary
           %li

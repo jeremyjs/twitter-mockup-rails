@@ -1,6 +1,7 @@
-@import 'compass';
+@import 'normalize-rails';
 @import 'variables';
 @import 'mixins';
+@import 'compass';
 @import 'bootstrap-custom';
 @import 'font-awesome';
 
@@ -11,14 +12,8 @@
 
 @import 'pages/profile';
 
-* {
-  outline: 0;
-  zoom: 1;
-}
-
 body {
   background: #f5f8fa;
-  height: 2000px;
 }
 
 a:hover { text-decoration: none; }
